@@ -4,7 +4,7 @@ github.com/Odoong
 */
 function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
     const Jsoup = org.jsoup.Jsoup;
-    if (msg == "-코로나현황" || msg == '-covid') {
+    if (msg == ".코로나현황" || msg == '.covid') {
         let url1 = Jsoup.connect("https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=코로나%20확진자").get();
         let url2 = Jsoup.connect("https://www.seoul.go.kr/coronaV/coronaStatus.do").get();
         let KRinfor = url1.select("div.main_tab_area > div > div > ul > li.info_01 > p").text();
