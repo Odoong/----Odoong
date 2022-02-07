@@ -1,6 +1,6 @@
 /*
-Created by Odoong
-소스 배포 금지입니다.
+Creat By Odoong
+github.com/Odoong
 */
 function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
   let start = Date.now();
