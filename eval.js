@@ -9,12 +9,10 @@ function response(room, msg, sender, isGroupChat, replier, imageDB, packageName)
       try {
         replier.reply(eval(msg.substr(4)));
         replier.reply('RUNTIME | ' + ((Date.now() - start) / 1) + 'ms');
-      }
-      catch (e) {
+      } catch (e) {
         replier.reply('⚠️  ' + msg.substr(4) + '\n' + e.message);
       }
-    }
-    else {
+    } else {
       replier.reply('You are not admin.');
     }
   }
